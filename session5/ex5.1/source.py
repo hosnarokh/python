@@ -83,3 +83,10 @@ def calculate_average_of_averages(input_file_name, output_file_name):
     avg = mean(data.values())
     with open(output_file_name, mode='w') as f:
         f.write(f'{avg}\n')
+
+
+calculate_averages('data.csv','avg.csv')
+calculate_sorted_averages('data.csv','sorted_avg.csv')
+calculate_three_best('data.csv','best_three.csv')
+calculate_three_worst('data.csv','three_worst.csv')
+calculate_average_of_averages('data.csv','avg_avg.csv')
