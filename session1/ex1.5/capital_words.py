@@ -8,7 +8,7 @@ def find_capital_words():
         word_count += 1
         for i in range(1, len(sentence)):
             word_count += 1
-            if sentence[i].replace('.', "").replace(";", '') == sentence[i].capitalize():
+            if sentence[i].isalpha() and sentence[i].replace('.', "").replace(";", '') == sentence[i].capitalize():
                 capital_words[word_count] = sentence[i]
     for key, value in capital_words.items():
         print(f'{key}:{value}')
